@@ -3,96 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoVida - Preservação Ambiental</title>
+    <title>EcoPlaneta - Preservação Ambiental</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header/Navbar -->
+    <!-- Barra de Navegação -->
     <header>
         <nav class="navbar">
             <div class="logo">
-                <i class="fas fa-seedling"></i>
-                <span>EcoVida</span>
+                <i class="fas fa-leaf"></i>
+                <span>EcoPlaneta</span>
             </div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
             <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#dados">Dados</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
         </nav>
     </header>
 
-    <!-- Hero Banner -->
-    <section class="hero">
+    <!-- Banner Principal -->
+    <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Protegendo o Planeta Juntos</h1>
-            <p>Descubra como pequenas ações podem salvar o meio ambiente.</p>
-            <a href="projetos.html" class="btn">Participe Agora</a>
+            <h1>Juntos Podemos Salvar o Planeta</h1>
+            <p>Pequenas ações fazem grandes diferenças. Comece hoje sua jornada sustentável.</p>
+            <a href="#dados" class="btn">Saiba Mais</a>
         </div>
     </section>
 
-    <!-- Cards de Destaque -->
-    <section class="destaques">
-        <h2>Por que preservar?</h2>
-        <div class="cards-container">
-            <div class="card">
-                <i class="fas fa-tree"></i>
-                <h3>Florestas</h3>
-                <p>+ de 10 milhões de hectares são desmatados por ano.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-tint"></i>
-                <h3>Água</h3>
-                <p>2,2 bilhões de pessoas não têm água potável.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-fire"></i>
-                <h3>Clima</h3>
-                <p>Temperatura global aumenta 0,18°C por década.</p>
+    <!-- Seção Sobre -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <h2>Sobre a Iniciativa</h2>
+            <div class="underline"></div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>O EcoPlaneta nasceu da necessidade de conscientizar sobre os impactos ambientais e promover ações sustentáveis no dia a dia. Acreditamos que cada pessoa pode contribuir para um futuro melhor.</p>
+                    <p>Nossa missão é educar, inspirar e mobilizar indivíduos e comunidades para adotarem práticas ecológicas em suas rotinas.</p>
+                </div>
+                <div class="about-image">
+                    <div class="image-frame"></div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Galeria de Imagens Responsiva -->
-    <section class="galeria">
-        <h2>Beleza Natural em Risco</h2>
-        <div class="grid-galeria">
-            <div class="item-galeria">
-                <img src="img/floresta.jpg" alt="Floresta Amazônica">
-                <div class="overlay">
-                    <p>Floresta Amazônica</p>
+    <!-- Cards com Dados -->
+    <section id="dados" class="data-cards">
+        <div class="container">
+            <h2>Números que Precisam Mudar</h2>
+            <div class="underline"></div>
+            <div class="cards-container">
+                <div class="card">
+                    <i class="fas fa-fire"></i>
+                    <h3>Aquecimento Global</h3>
+                    <p>A temperatura média da Terra aumentou 1.1°C desde o século XIX</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-trash"></i>
+                    <h3>Poluição</h3>
+                    <p>8 milhões de toneladas de plástico chegam aos oceanos anualmente</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-tree"></i>
+                    <h3>Desmatamento</h3>
+                    <p>10 milhões de hectares de florestas são perdidos a cada ano</p>
                 </div>
             </div>
-            <div class="item-galeria">
-                <img src="img/oceano.jpg" alt="Vida Marinha">
-                <div class="overlay">
-                    <p>Oceanos Ameaçados</p>
+        </div>
+    </section>
+
+    <!-- Galeria de Imagens -->
+    <section id="galeria" class="gallery">
+        <div class="container">
+            <h2>Beleza Natural Ameaçada</h2>
+            <div class="underline"></div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/floresta.jpg" alt="Floresta tropical">
+                    <div class="overlay">
+                        <p>Florestas Tropicais</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/oceano.jpg" alt="Vida marinha">
+                    <div class="overlay">
+                        <p>Ecossistemas Marinhos</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder">
+                        <i class="fas fa-paw"></i>
+                        <p>Espécies Ameaçadas</p>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Chamada para Ação -->
+    <section class="cta">
+        <div class="container">
+            <h2>Faça Parte da Mudança</h2>
+            <p>Junte-se a nós nessa jornada por um planeta mais saudável e sustentável.</p>
+            <a href="#contato" class="btn">Quero Ajudar</a>
         </div>
     </section>
 
     <!-- Rodapé -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-logo">
-                <i class="fas fa-seedling"></i>
-                <span>EcoVida</span>
+    <footer id="contato">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>EcoPlaneta</h3>
+                    <p>Promovendo a sustentabilidade e conscientização ambiental desde 2023.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-envelope"></i> contato@ecoplaneta.org</p>
+                    <p><i class="fas fa-phone"></i> (11) 98765-4321</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Siga-nos</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="footer-links">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
+            <div class="copyright">
+                <p>&copy; 2023 EcoPlaneta. Todos os direitos reservados.</p>
             </div>
         </div>
-        <p>&copy; 2023 EcoVida - Todos os direitos reservados.</p>
     </footer>
-
-    <script src="js/script.js"></script>
 </body>
 </html>
